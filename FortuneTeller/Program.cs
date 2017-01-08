@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Ryan J. Bender
+//Project Fortune Teller For We Can Code IT 
+//Cleveland Winter Class of 2017
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +13,9 @@ namespace FortuneTeller
     class Program
     {
         //Fortune Teller Program
+        /*
+         * This program takes information from the user and uses it to create a fortune
+        */
         static void Main(string[] args)
         {
             //Part 1 get the information
@@ -53,7 +60,7 @@ namespace FortuneTeller
                  retireYears = "42 years";
             }
             
-            //Vaction Home data
+            //Vaction Home data based on number of siblings
             string vacHome;
             if (siblingsNum <0)
             {
@@ -118,6 +125,7 @@ namespace FortuneTeller
                     transportColor = "Volkswagon Beetle";
                 break;
 
+                //The default is used for any other color besides the 'valid' colors with a ludicrious transportation
                 default:
                     transportColor = "Larry the Riding Llama";
                 break;
@@ -143,7 +151,7 @@ namespace FortuneTeller
 
 
             //Part 3
-            Console.WriteLine("This is your Fortune!");
+            Console.WriteLine("Zoltar has read your Future!");
             Console.WriteLine(firstName + " " + lastName + " will retire in " + retireYears + " with " + cashBank + " in the bank, a vaction home in " +  vacHome + " and a " + transportColor);
            
         }
